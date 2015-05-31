@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73287BD1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */; };
+		C73287BE1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */; };
 		C7383C951B1A902000A4C4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383C941B1A902000A4C4CB /* AppDelegate.swift */; };
 		C7383C971B1A902000A4C4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383C961B1A902000A4C4CB /* ViewController.swift */; };
 		C7383C9A1B1A902000A4C4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7383C981B1A902000A4C4CB /* Main.storyboard */; };
 		C7383C9C1B1A902000A4C4CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7383C9B1B1A902000A4C4CB /* Images.xcassets */; };
 		C7383C9F1B1A902000A4C4CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7383C9D1B1A902000A4C4CB /* LaunchScreen.xib */; };
 		C7383CAB1B1A902000A4C4CB /* InterfaceBuilderTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383CAA1B1A902000A4C4CB /* InterfaceBuilderTutorialTests.swift */; };
+		C7383CB71B1A9FB000A4C4CB /* Lesson2Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383CB61B1A9FB000A4C4CB /* Lesson2Button.swift */; };
+		C7383CB91B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383CB81B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift */; };
+		C7383CBD1B1AA44900A4C4CB /* YourLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383CBC1B1AA44900A4C4CB /* YourLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourLabelSolution.swift; sourceTree = "<group>"; };
 		C7383C8F1B1A902000A4C4CB /* InterfaceBuilderTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceBuilderTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7383C931B1A902000A4C4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7383C941B1A902000A4C4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,9 @@
 		C7383CA41B1A902000A4C4CB /* InterfaceBuilderTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterfaceBuilderTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7383CA91B1A902000A4C4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7383CAA1B1A902000A4C4CB /* InterfaceBuilderTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderTutorialTests.swift; sourceTree = "<group>"; };
+		C7383CB61B1A9FB000A4C4CB /* Lesson2Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson2Button.swift; sourceTree = "<group>"; };
+		C7383CB81B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson2ButtonSolution.swift; sourceTree = "<group>"; };
+		C7383CBC1B1AA44900A4C4CB /* YourLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,8 @@
 				C7383C941B1A902000A4C4CB /* AppDelegate.swift */,
 				C7383C961B1A902000A4C4CB /* ViewController.swift */,
 				C7383C981B1A902000A4C4CB /* Main.storyboard */,
+				C7383CBA1B1AA2F100A4C4CB /* Lesson2.1 */,
+				C7383CBB1B1AA42100A4C4CB /* Lesson2.2 */,
 				C7383C9B1B1A902000A4C4CB /* Images.xcassets */,
 				C7383C9D1B1A902000A4C4CB /* LaunchScreen.xib */,
 				C7383C921B1A902000A4C4CB /* Supporting Files */,
@@ -110,6 +121,24 @@
 				C7383CA91B1A902000A4C4CB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7383CBA1B1AA2F100A4C4CB /* Lesson2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				C7383CB61B1A9FB000A4C4CB /* Lesson2Button.swift */,
+				C7383CB81B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift */,
+			);
+			name = Lesson2.1;
+			sourceTree = "<group>";
+		};
+		C7383CBB1B1AA42100A4C4CB /* Lesson2.2 */ = {
+			isa = PBXGroup;
+			children = (
+				C7383CBC1B1AA44900A4C4CB /* YourLabel.swift */,
+				C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */,
+			);
+			name = Lesson2.2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73287BD1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */,
 				C7383C971B1A902000A4C4CB /* ViewController.swift in Sources */,
+				C7383CB91B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift in Sources */,
+				C7383CBD1B1AA44900A4C4CB /* YourLabel.swift in Sources */,
 				C7383C951B1A902000A4C4CB /* AppDelegate.swift in Sources */,
+				C7383CB71B1A9FB000A4C4CB /* Lesson2Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73287BE1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */,
 				C7383CAB1B1A902000A4C4CB /* InterfaceBuilderTutorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +443,7 @@
 				C7383CB01B1A902000A4C4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7383CB11B1A902000A4C4CB /* Build configuration list for PBXNativeTarget "InterfaceBuilderTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +452,7 @@
 				C7383CB31B1A902000A4C4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
