@@ -57,7 +57,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="QSl-b1-bxG"/>
                                 </constraints>
-                                <mutableString key="text">The Importance of Constraining Parent Views Step 1: Add a button below the label and set a vertical constraint between the label and button Step 2: Now center the button. You should notice when you now click on the items, IB thinks they should go somewhere we don't expect. This is because the parent view's constraints are not set
+                                <mutableString key="text">The Importance of Constraining Parent Views First Step 1: Add a button below the label and set a vertical constraint between the label and button Step 2: Now center the button. You should notice when you now click on the items, IB thinks they should go somewhere we don't expect. This is because the parent view's constraints are not set
 Step 3: Add constraints between the grey view and the view controller. This should fix everything.
 
 A good rule of thumb with constraints in IB is to always start with the highest parent first.</mutableString>
@@ -215,6 +215,119 @@ Step 4: Cmd + = on the label</string>
             </objects>
             <point key="canvasLocation" x="140" y="2335"/>
         </scene>
+        <!--Lesson 1.5-->
+        <scene sceneID="2KJ-2l-gqy">
+            <objects>
+                <viewController title="Lesson 1.5" id="0B2-7a-1ch" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Xj-En-Aeg"/>
+                        <viewControllerLayoutGuide type="bottom" id="lge-xR-UMu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fy7-lD-76O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-wf-az7">
+                                <rect key="frame" x="16" y="420" width="568" height="160"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="n5C-0p-oq2"/>
+                                    <constraint firstAttribute="height" constant="240" id="tU5-cW-ofy"/>
+                                </constraints>
+                                <mutableString key="text">Embedding Items into Views
+Step 1: Select the label and button Step 2: Open the Editor menu at the top and select Embed in -&gt; View. Notice that the items are now in a view (that's sized pretty good, too)
+Step 3: Let's say you forgot you wanted this in a navigation controller. Go to Editor -&gt; Embed in -&gt; Navigation Controller</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tU5-cW-ofy"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw2-7D-SIo">
+                                <rect key="frame" x="279" y="120" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-G4-ThS">
+                                <rect key="frame" x="277" y="171" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h8O-wf-az7" firstAttribute="leading" secondItem="fy7-lD-76O" secondAttribute="leadingMargin" id="hV5-v1-cxS"/>
+                            <constraint firstItem="lge-xR-UMu" firstAttribute="top" secondItem="h8O-wf-az7" secondAttribute="bottom" constant="20" id="qdz-0P-UBw"/>
+                            <constraint firstItem="h8O-wf-az7" firstAttribute="trailing" secondItem="fy7-lD-76O" secondAttribute="trailingMargin" id="x1x-gC-Si6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orb-Of-sz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3009"/>
+        </scene>
+        <!--Lesson 1.5 Solution-->
+        <scene sceneID="MXe-8F-a8I">
+            <objects>
+                <viewController title="Lesson 1.5 Solution" id="OQ2-rv-Hrf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KuZ-CS-SN9"/>
+                        <viewControllerLayoutGuide type="bottom" id="cJu-S0-Z7J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F5G-pW-qvm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8m-wX-com">
+                                <rect key="frame" x="16" y="420" width="568" height="160"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="1rX-9T-HAS"/>
+                                    <constraint firstAttribute="height" constant="240" id="rya-3A-nnt"/>
+                                </constraints>
+                                <mutableString key="text">Embedding Items into Views
+Step 1: Select the label and button Step 2: Open the Editor menu at the top and select Embed in -&gt; View. Notice that the items are now in a view (that's sized pretty good, too)
+Step 3: Let's say you forgot you wanted this in a navigation controller. Go to Editor -&gt; Embed in -&gt; Navigation Controller</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rya-3A-nnt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PP-gD-RJ3">
+                                <rect key="frame" x="279" y="120" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-lZ-yA1">
+                                <rect key="frame" x="277" y="171" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cJu-S0-Z7J" firstAttribute="top" secondItem="H8m-wX-com" secondAttribute="bottom" constant="20" id="40L-Km-YZU"/>
+                            <constraint firstItem="H8m-wX-com" firstAttribute="trailing" secondItem="F5G-pW-qvm" secondAttribute="trailingMargin" id="bQV-Sg-gFf"/>
+                            <constraint firstItem="H8m-wX-com" firstAttribute="leading" secondItem="F5G-pW-qvm" secondAttribute="leadingMargin" id="gej-tu-F6c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FK5-rL-6A2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbC-Ol-Vdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="3009"/>
+        </scene>
         <!--Lesson 1.4-->
         <scene sceneID="oKg-xD-JL6">
             <objects>
@@ -364,6 +477,24 @@ Step 4: Cmd + = on the label</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecV-oi-I4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="280"/>
+        </scene>
+        <!--Lesson 1.5 Solution-->
+        <scene sceneID="kEv-re-dgH">
+            <objects>
+                <navigationController title="Lesson 1.5 Solution" automaticallyAdjustsScrollViewInsets="NO" id="RLE-xS-GRT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PnO-3P-zDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OQ2-rv-Hrf" kind="relationship" relationship="rootViewController" id="wzv-ZG-1SN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVF-Rh-jDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="3009"/>
         </scene>
     </scenes>
     <resources>
