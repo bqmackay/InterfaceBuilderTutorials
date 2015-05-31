@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Lesson 1-->
+        <!--Lesson 1.1-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Lesson 1" id="vXZ-lx-hvc" customClass="ViewController" customModule="InterfaceBuilderTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lesson 1.1" id="vXZ-lx-hvc" customClass="ViewController" customModule="InterfaceBuilderTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -19,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-LR-Pgm">
                                 <rect key="frame" x="16" y="400" width="568" height="163"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">Step 1: Control+click+drag above to set top space (vertical padding) Step 2: Control+click+drag above to set horizontal centering Bonus: Remove the constraints and this time, add them by Ctrl+click+drag above; when the menu opens, hold shift and select both vertical padding and horizontal centering; and press enter.</mutableString>
+                                <mutableString key="text">Setting Constraints Step 1: Control+click+drag above to set top space (vertical padding) Step 2: Control+click+drag above to set horizontal centering Bonus: Remove the constraints and this time, add them by Ctrl+click+drag above; when the menu opens, hold shift and select both vertical padding and horizontal centering; and press enter.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,10 +39,306 @@
             </objects>
             <point key="canvasLocation" x="140" y="280"/>
         </scene>
-        <!--Lesson 1 Solution-->
+        <!--Lesson 1.2-->
+        <scene sceneID="8V4-N9-2fu">
+            <objects>
+                <viewController title="Lesson 1.2" id="6Qs-ER-hkd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5P-m0-u1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="AqO-51-Gr4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CBE-Xn-3Mu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jN-pc-JPy">
+                                <rect key="frame" x="16" y="340" width="568" height="240"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="QSl-b1-bxG"/>
+                                </constraints>
+                                <mutableString key="text">The Importance of Constraining Parent Views Step 1: Add a button below the label and set a vertical constraint between the label and button Step 2: Now center the button. You should notice when you now click on the items, IB thinks they should go somewhere we don't expect. This is because the parent view's constraints are not set
+Step 3: Add constraints between the grey view and the view controller. This should fix everything.
+
+A good rule of thumb with constraints in IB is to always start with the highest parent first.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-zD-UXW">
+                                <rect key="frame" x="128" y="110" width="345" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Click the button to move on" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrO-pl-NeA">
+                                        <rect key="frame" x="66" y="36" width="214" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="rrO-pl-NeA" secondAttribute="centerX" id="SH9-37-IWe"/>
+                                    <constraint firstItem="rrO-pl-NeA" firstAttribute="top" secondItem="VTe-zD-UXW" secondAttribute="top" constant="36" id="jvU-XQ-daK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AqO-51-Gr4" firstAttribute="top" secondItem="9jN-pc-JPy" secondAttribute="bottom" constant="20" id="XBS-U6-Gdt"/>
+                            <constraint firstItem="9jN-pc-JPy" firstAttribute="trailing" secondItem="CBE-Xn-3Mu" secondAttribute="trailingMargin" id="YPq-Md-FtV"/>
+                            <constraint firstItem="9jN-pc-JPy" firstAttribute="leading" secondItem="CBE-Xn-3Mu" secondAttribute="leadingMargin" id="u5X-AW-GnJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ap-sl-eAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="969"/>
+        </scene>
+        <!--Lesson 1.3-->
+        <scene sceneID="IfD-am-qO5">
+            <objects>
+                <viewController title="Lesson 1.3" id="Vqb-DI-kpe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E0J-Oq-NMV"/>
+                        <viewControllerLayoutGuide type="bottom" id="GPM-bg-XcU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZkJ-r7-iS6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nG-VK-OCK">
+                                <rect key="frame" x="35" y="75" width="300" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxw-Un-oug">
+                                <rect key="frame" x="16" y="420" width="568" height="160"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="5JP-NQ-RNS"/>
+                                    <constraint firstAttribute="height" constant="160" id="taA-rm-Oc9"/>
+                                </constraints>
+                                <string key="text">Size to Fit
+Step 1: Add image 50x50 to the image view. Step 2: The image view is too big! Press cmd + = to auto fit.
+Step 3: Do the same thing to the oversized label.
+Step 4: What about items inside of parent view? Try it on the badly shapped view.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5JP-NQ-RNS"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oversized Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNJ-AU-h7j">
+                                <rect key="frame" x="370" y="75" width="209" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SvP-3o-tWH">
+                                <rect key="frame" x="95" y="226" width="410" height="138"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50x50" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-S7-slj">
+                                        <rect key="frame" x="21" y="39" width="50" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bns-fm-yW5">
+                                        <rect key="frame" x="86" y="53" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wxw-Un-oug" secondAttribute="trailing" id="6Ol-2Q-3x6"/>
+                            <constraint firstItem="wxw-Un-oug" firstAttribute="leading" secondItem="ZkJ-r7-iS6" secondAttribute="leadingMargin" id="Gno-cE-JUU"/>
+                            <constraint firstItem="GPM-bg-XcU" firstAttribute="top" secondItem="wxw-Un-oug" secondAttribute="bottom" constant="20" id="wRZ-Yt-Le2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRn-u6-QVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="1645"/>
+        </scene>
+        <!--Lesson 1.4-->
+        <scene sceneID="tjU-FH-77M">
+            <objects>
+                <viewController title="Lesson 1.4" id="CGe-NK-EnP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i5k-Je-LZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="iyY-Sb-TRF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v4W-nV-hcL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This label has two lines Here's the second line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55v-RT-Pbh">
+                                <rect key="frame" x="211" y="107" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlp-Ki-lnf">
+                                <rect key="frame" x="16" y="420" width="568" height="160"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="BBD-Q1-OlA"/>
+                                    <constraint firstAttribute="height" constant="240" id="OxE-Wv-JuH"/>
+                                    <constraint firstAttribute="height" constant="160" id="ddR-iS-o1O"/>
+                                </constraints>
+                                <string key="text">Multi-line Labels
+Step 1: Select the label Step 2: Select the Attribute inspector (4th from the left. Looks kind of like a down arrow)
+Step 3: Change the attribute "Lines" to 0
+Step 4: Cmd + = on the label</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OxE-Wv-JuH"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qlp-Ki-lnf" firstAttribute="leading" secondItem="v4W-nV-hcL" secondAttribute="leadingMargin" id="MMW-tT-rEq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qlp-Ki-lnf" secondAttribute="trailing" id="e2m-0s-Q5m"/>
+                            <constraint firstItem="iyY-Sb-TRF" firstAttribute="top" secondItem="Qlp-Ki-lnf" secondAttribute="bottom" constant="20" id="pjk-hh-amI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5h-YH-9ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="2335"/>
+        </scene>
+        <!--Lesson 1.4-->
+        <scene sceneID="oKg-xD-JL6">
+            <objects>
+                <viewController title="Lesson 1.4" id="aOx-Tq-v2X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmA-6A-NOx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qd0-yN-bon"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jV5-Cz-tUE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This label has two lines Here's the second line" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu7-9g-5Rm">
+                                <rect key="frame" x="211" y="107" width="178" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAh-RQ-Hnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="2335"/>
+        </scene>
+        <!--Lesson 1.3-->
+        <scene sceneID="Q2r-iq-Pms">
+            <objects>
+                <viewController title="Lesson 1.3" id="g8k-oY-l6O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8VN-6B-GPs"/>
+                        <viewControllerLayoutGuide type="bottom" id="hnW-i9-HDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Srp-ze-7B4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50x50" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-ec-nZv">
+                                <rect key="frame" x="35" y="75" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oversized Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYG-0T-2Xf">
+                                <rect key="frame" x="370" y="75" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cng-Jk-w7w">
+                                <rect key="frame" x="83" y="200" width="153" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3U-jT-xLf">
+                                        <rect key="frame" x="79" y="42" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50x50" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-DP-abt">
+                                        <rect key="frame" x="8" y="21" width="50" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9C-8Y-GEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="1645"/>
+        </scene>
+        <!--Lesson 1.2 Solution-->
+        <scene sceneID="Tcz-us-Gxu">
+            <objects>
+                <viewController title="Lesson 1.2 Solution" id="eIr-re-KOA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bAp-l6-VZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fn0-o0-0ht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MOo-0l-YFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQa-n4-57t">
+                                <rect key="frame" x="128" y="115" width="345" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button to move on" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-va-oOD">
+                                        <rect key="frame" x="66" y="36" width="213" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-eh-1dP">
+                                        <rect key="frame" x="150" y="104" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="YjU-va-oOD" secondAttribute="centerX" id="16I-iD-gCF"/>
+                                    <constraint firstItem="Sgx-eh-1dP" firstAttribute="top" secondItem="YjU-va-oOD" secondAttribute="bottom" constant="47" id="5PK-8Q-4Kt"/>
+                                    <constraint firstAttribute="centerX" secondItem="Sgx-eh-1dP" secondAttribute="centerX" constant="-0.5" id="N0I-mY-Yca"/>
+                                    <constraint firstItem="YjU-va-oOD" firstAttribute="top" secondItem="NQa-n4-57t" secondAttribute="top" constant="36" id="qp0-08-ANQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQa-n4-57t" secondAttribute="trailing" constant="111" id="0lS-sn-juq"/>
+                            <constraint firstItem="Fn0-o0-0ht" firstAttribute="top" secondItem="NQa-n4-57t" secondAttribute="bottom" constant="285" id="9Sd-5Y-YYi"/>
+                            <constraint firstItem="NQa-n4-57t" firstAttribute="leading" secondItem="MOo-0l-YFQ" secondAttribute="leadingMargin" constant="112" id="umH-cM-GEw"/>
+                            <constraint firstItem="NQa-n4-57t" firstAttribute="top" secondItem="bAp-l6-VZe" secondAttribute="bottom" constant="95" id="xcx-pZ-CJZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arV-po-Vse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="969"/>
+        </scene>
+        <!--Lesson 1.1 Solution-->
         <scene sceneID="7Ge-lE-9Lo">
             <objects>
-                <viewController title="Lesson 1 Solution" id="cAd-Ub-5rH" sceneMemberID="viewController">
+                <viewController title="Lesson 1.1 Solution" id="cAd-Ub-5rH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cwO-kY-GpA"/>
                         <viewControllerLayoutGuide type="bottom" id="J02-L1-Nl7"/>
@@ -69,4 +366,7 @@
             <point key="canvasLocation" x="812" y="280"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="50x50" width="50" height="50"/>
+    </resources>
 </document>
