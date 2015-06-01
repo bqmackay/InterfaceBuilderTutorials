@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C73287BD1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */; };
 		C73287BE1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */; };
+		C73287C81B1AC5F800E06229 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73287C71B1AC5F800E06229 /* CustomView.swift */; };
 		C7383C951B1A902000A4C4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383C941B1A902000A4C4CB /* AppDelegate.swift */; };
 		C7383C971B1A902000A4C4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7383C961B1A902000A4C4CB /* ViewController.swift */; };
 		C7383C9A1B1A902000A4C4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7383C981B1A902000A4C4CB /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		C73287BC1B1AA8CA00E06229 /* YourLabelSolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourLabelSolution.swift; sourceTree = "<group>"; };
+		C73287C71B1AC5F800E06229 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C7383C8F1B1A902000A4C4CB /* InterfaceBuilderTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceBuilderTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7383C931B1A902000A4C4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7383C941B1A902000A4C4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73287C91B1AC5FE00E06229 /* Lesson2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				C73287C71B1AC5F800E06229 /* CustomView.swift */,
+			);
+			name = Lesson2.3;
+			sourceTree = "<group>";
+		};
 		C7383C861B1A902000A4C4CB = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 				C7383C981B1A902000A4C4CB /* Main.storyboard */,
 				C7383CBA1B1AA2F100A4C4CB /* Lesson2.1 */,
 				C7383CBB1B1AA42100A4C4CB /* Lesson2.2 */,
+				C73287C91B1AC5FE00E06229 /* Lesson2.3 */,
 				C7383C9B1B1A902000A4C4CB /* Images.xcassets */,
 				C7383C9D1B1A902000A4C4CB /* LaunchScreen.xib */,
 				C7383C921B1A902000A4C4CB /* Supporting Files */,
@@ -244,6 +255,7 @@
 				C73287BD1B1AA8CA00E06229 /* YourLabelSolution.swift in Sources */,
 				C7383C971B1A902000A4C4CB /* ViewController.swift in Sources */,
 				C7383CB91B1AA2E100A4C4CB /* Lesson2ButtonSolution.swift in Sources */,
+				C73287C81B1AC5F800E06229 /* CustomView.swift in Sources */,
 				C7383CBD1B1AA44900A4C4CB /* YourLabel.swift in Sources */,
 				C7383C951B1A902000A4C4CB /* AppDelegate.swift in Sources */,
 				C7383CB71B1A9FB000A4C4CB /* Lesson2Button.swift in Sources */,
